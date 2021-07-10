@@ -17,6 +17,6 @@ docker push baodi76/multi-worker:$SHA
 kubectl apply -f k8s
 
 # imperatively set latest images
-kubectl set image deployments/client-deployment server=baodi76/multi-client:$SHA
+kubectl set image deployments/client-deployment client=baodi76/multi-client:$SHA
 kubectl set image deployments/server-deployment server=baodi76/multi-server:$SHA
-kubectl set image deployments/worker-deployment server=baodi76/multi-worker:$SHA
+kubectl set image deployments/worker-deployment worker=baodi76/multi-worker:$SHA
