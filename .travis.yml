@@ -16,6 +16,7 @@ before_install:
   - gcloud config set project multe-k8s
   - gcloud config set compute/zone asia-southeast1-c
   - gcloud container clusters get-credentials multi-cluster
+  #failed due to docker hub auth, so reconfig at travis CI key/value pair
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker build -t baodi76/react-test -f ./client/Dockerfile.dev ./client
 
