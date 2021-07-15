@@ -4,10 +4,10 @@ deploy:
   kubectl:
     manifests:
       # read all of yamal file
-      #- ./k8s/*
-      - ./k8s/client-deployment.yaml
-      - ./k8s/server-deployment.yaml
-      - ./k8s/worker-deployment.yaml
+      - ./k8s/*
+      #- ./k8s/client-deployment.yaml
+      #- ./k8s/server-deployment.yaml
+      #- ./k8s/worker-deployment.yaml
 
 build:
   local:

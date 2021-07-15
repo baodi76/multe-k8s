@@ -17,7 +17,7 @@ function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Fib K8S GC container v1 !! with skaffold update.try 3niu
+            Fib K8S GC container v1 !! with skaffold update.try 5
           </a>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
